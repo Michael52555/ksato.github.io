@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Section from "./components/Section";
+import Card from "./components/Card.jsx";
 import { PROFILE, ABOUT, FEATURED, RESEARCH, PROJECTS, SKILLS } from "./content";
 
 export default function App() {
