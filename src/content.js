@@ -3,49 +3,65 @@ export const PROFILE = {
   tagline: "USC Math • Algebraic combinatorics • Software",
   buttons: [
     { label: "GitHub", href: "https://github.com/Michael52555" },
-    { label: "Email", href: "mailto:you@example.com" },
+    { label: "Email", href: "kosukesa@usc.edu" },
     // { label: "Resume", href: "/portfolio/resume.pdf" },
     // { label: "LinkedIn", href: "https://linkedin.com/in/..." },
   ],
 };
 
 export const ABOUT = [
-  "I’m a USC math student working in algebraic combinatorics / representation theory. I’m especially interested in the automorphism group of surjective flags of finitely generated modules over DVRs with finite residue fields, such as $\\mathbb{Z}_p$ and $\\mathbb{F}_q[[T]]$, which are highly relevant in the study of Markov property of finitized Cohen Lenstra Measure Heuristics. I'm also interested in Weyr forms, characterizing the isomorphism classes of $\\mathbb{F}_q[[T]]$ modules",
-  "On the software side, I built tools for math research: scraping and searching arxIv research papers, and pipelines that matches papers with math topics based on keywords from Abstract."
+  "I’m currently a USC Sophomore math student interested in algebraic combinatorics / representation theory /algebraic geometry. Outside of math, I'm passionate about Theory of Artificial Intelligence, Quantitative trading, Quantitative research, Software engineering and development in Lean."
 ];
 
-export const FEATURED = [
-  {
-    title: "Weyr Flags & Automorphisms over DVRs",
-    subtitle: "Research highlight",
-    bullets: [
-      "Classifying automorphisms of surjective flags over DVRs (e.g. Z_p, F_q[[T]])",
-      "Exploring Hall-polynomial-like counts via Weyr-type invariants",
-    ],
-    links: [
-      // { label: "Slides", href: "/portfolio/slides/weyr.pdf" },
-    ],
-  },
-  {
-    title: "arXiv Math Paper Miner",
-    subtitle: "Software highlight",
-    bullets: [
-      "Scrapes arXiv math papers and builds a topic/keyword search layer",
-      "Embeddings + vector search pipeline (FAISS-style approach)",
-    ],
-    links: [{ label: "Repo", href: "https://github.com/Michael52555" }],
-  },
-];
+// export const FEATURED = [
+//   {
+//     title: "Weyr Flags & Automorphisms over DVRs",
+//     subtitle: "Research highlight",
+//     bullets: [
+//       "Classifying automorphisms of surjective flags over DVRs (e.g. $\\mathbb{Z}_p$, $\\mathbb{F_q}[[T]]$)",
+//       "Exploring Hall-polynomial-like counts via Weyr-type invariants",
+//     ],
+//     links: [
+//       // { label: "Slides", href: "/portfolio/slides/weyr.pdf" },
+//     ],
+//   },
+//   {
+//     title: "arXiv Math Paper Miner",
+//     subtitle: "Software highlight",
+//     bullets: [
+//       "Scrapes arXiv math papers and builds a topic/keyword search layer",
+//       "Embeddings + vector search pipeline (FAISS-style approach)",
+//     ],
+//     links: [{ label: "Repo", href: "https://github.com/Michael52555" }],
+//   },
+//   {
+//     title
+//   }
+// ];
 
 export const RESEARCH = [
   {
-    title: "Weyr Flags & Automorphisms over DVRs",
-    subtitle: "Algebraic combinatorics / representation theory",
+    title: "Finitized Cohen Lenstra Heuristics, Mentor: Yifeng Huang",
+    subtitle: "Algebraic combinatorics / representation theory / Abstract Algebra",
     bullets: [
-      "Goal: structural classification + counts of automorphisms for flag data",
+      "Finite pushforward Measure of Cohen Lenstra measure of surjective flags of finitely generated $\\mathbb{Z}_p$ modules onto finitely generated $\\mathbb{Z}/p^n\\mathbb{Z}$ modules",
+      "Structural classification of automorphism group for surjective flags over DVR with finite uniformalizers",
       "Tech: module/flag invariants, Hall polynomial ideas, Bruhat-style decompositions (where applicable)",
+      "Possible interest: The distribution of flag of Cokernel of random upper-triangular $\\mathbb{Z}_p$ matrices",
+      "In progress"
     ],
     links: [],
+  },
+];
+
+export const INTERNSHIPS = [
+  {
+    title: "Data Science Intern, Sports Media Inc.",
+    subtitle: "Python • Data Analytics",
+    bullets: [
+        "Analyzed data on the Team Surveys and Mr.Kost’s project using Google Analytics and Python",
+        "Mostly predicting user interests and trends in fan engagement in different events",
+    ],
   },
 ];
 
@@ -59,9 +75,24 @@ export const PROJECTS = [
     ],
     links: [{ label: "Repo", href: "https://github.com/Michael52555" }],
   },
+
+  {
+    title: "Java Go game Interface",
+    subtitle: "Java • Algorithms • Data Structures",
+    bullets: [
+        "Developed a Java-based digital Go game implementing scoring and play functions via several algorithms (Depth First Search, Dynamic Programming)",
+        "Authored a paper on potential AI applications and published code on GitHub",
+    ],
+    links: [{label: "Repo", href: "https://github.com/Michael595555555/Go-Game"}]
+  }
 ];
 
 export const SKILLS = {
   software: ["Python", "C++", "Java", "React/Vite", "Git", "Probability Theory", "Mandarin", "English", "Data Science", "LaTeX"],
-  math: ["Group Theory", "Module Theory", "Probability Theory", "Linear Algebra", "Combinatorics", "Calculus and Mathematical Analysis", "Basic Representation theory", "Algebraic geometry (intro)", "Mathematical Research"],
+  math: ["Abstract Algebra", "Probability Theory", "Linear Algebra", "Combinatorics", "Calculus and Mathematical Analysis", "Basic Representation theory", "Algebraic geometry (intro)", "Mathematical Research"],
 };
+
+export const COURSEWORKS = [
+    "Math 510B: Algebra",
+]
+

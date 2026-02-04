@@ -4,9 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Section from "./components/Section";
 import Card from "./components/Card.jsx";
-import { PROFILE, ABOUT, FEATURED, RESEARCH, PROJECTS, SKILLS } from "./content";
+import { PROFILE, ABOUT, RESEARCH, INTERNSHIPS, PROJECTS, SKILLS } from "./content";
 import { InlineMath, BlockMath } from 'react-katex'
 import MarkdownMath from "./components/MarkdownMath";
+
 
 
 export default function App() {
@@ -59,12 +60,14 @@ export default function App() {
             </div>
           </Section>
 
-          <Section id="featured" title="Featured">
-            {FEATURED.map((x) => <Card key={x.title} {...x} />)}
-          </Section>
+          
 
           <Section id="research" title="Research">
             {RESEARCH.map((x) => <Card key={x.title} {...x} />)}
+          </Section>
+
+          <Section id="internship" title="Internship">
+            {INTERNSHIPS.map((x) => <Card key={x.title} {...x} />)}
           </Section>
 
           <Section id="projects" title="Projects">
@@ -86,7 +89,7 @@ export default function App() {
 
           <Section id="contact" title="Contact">
             <div style={{ lineHeight: 1.8 }}>
-              <div>Email: <a href="mailto:you@example.com">you@example.com</a></div>
+              <div>Email: <a href="kosukesa@usc.edu">kosukesa@usc.edu</a></div>
               <div>GitHub: <a href="https://github.com/Michael52555" target="_blank" rel="noreferrer">Michael52555</a></div>
             </div>
           </Section>

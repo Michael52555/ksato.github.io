@@ -1,3 +1,5 @@
+import MarkdownMath from "./MarkdownMath";
+
 export default function Card({ title, subtitle, bullets = [], links = [] }) {
   return (
     <div
@@ -31,9 +33,11 @@ export default function Card({ title, subtitle, bullets = [], links = [] }) {
 
       {bullets.length > 0 && (
         <ul style={{ margin: "12px 0 0", paddingLeft: 18, lineHeight: 1.6 }}>
-          {bullets.map((b) => (
-            <li key={b}>{b}</li>
-          ))}
+          {bullets.map((b, i) => (
+            <li key={`${title}-b-${i}`}>
+                <MarkdownMath>{b}</MarkdownMath>
+            </li>
+        ))}
         </ul>
       )}
     </div>
