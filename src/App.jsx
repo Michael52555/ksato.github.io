@@ -8,19 +8,27 @@ import { PROFILE, ABOUT, RESEARCH, INTERNSHIPS, PROJECTS, SKILLS } from "./conte
 import { InlineMath, BlockMath } from 'react-katex'
 import MarkdownMath from "./components/MarkdownMath";
 
-
+const THEME = {
+  accent: "#7C1D1D",          
+  accentSoft: "rgba(207, 44, 44, 0.1)",
+  ink: "rgba(195, 19, 19, 0.88)",
+  muted: "rgba(0,0,0,0.62)",
+  page: "#f6f7fb",
+  panel: "white",
+  border: "rgba(0,0,0,0.10)",
+};
 
 export default function App() {
   return (
-    <div style={{ background: "#f6f7fb", minHeight: "100vh" }}>
+    <div style={{ background: THEME.page, minHeight: "100vh" }}>
       <div style={{ maxWidth: 980, margin: "0 auto", padding: "28px 20px" }}>
         {/* NAV */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontWeight: 800 }}>{PROFILE.name}</div>
           <div style={{ display: "flex", gap: 14 }}>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#research"style={{ color: THEME.accent, fontWeight: 650 }}> Research</a>
+            <a href="#projects"style={{ color: THEME.accent, fontWeight: 650 }}>Projects</a>
+            <a href="#contact"style={{ color: THEME.accent, fontWeight: 650 }}>Contact</a>
           </div>
         </div>
 

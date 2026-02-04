@@ -1,13 +1,24 @@
 import MarkdownMath from "./MarkdownMath";
 
+const THEME = {
+  accent: "#7C1D1D",          
+  accentSoft: "rgba(207, 44, 44, 0.1)",
+  ink: "rgba(195, 19, 19, 0.88)",
+  muted: "rgba(0,0,0,0.62)",
+  page: "#F2F4F8",
+  panel: "#FFFFFF",
+  border: "rgba(27, 9, 9, 0.1)",
+};  
+
 export default function Card({ title, subtitle, bullets = [], links = [] }) {
   return (
     <div
       style={{
-        border: "1px solid rgba(0,0,0,0.10)",
+        border: "10px solid rgba(0,0,0,0.10)",
+        borderLeft: "4px solid ${THEME.accentSoft}$",
         borderRadius: 14,
         padding: 18,
-        background: "white",
+        background: THEME.panel,
         marginBottom: 14,
       }}
     >
