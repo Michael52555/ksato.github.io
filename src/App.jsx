@@ -83,7 +83,7 @@ export default function App() {
           </Section>
 
           <Section id="skills" title="Skills">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr  ", gap: 12 }}>
               <div>
                 <div style={{ fontWeight: 700, marginBottom: 6 }}>Software</div>
                 <div style={{ color: "rgba(0,0,0,0.7)" }}>{SKILLS.software.join(" • ")}</div>
@@ -91,6 +91,10 @@ export default function App() {
               <div>
                 <div style={{ fontWeight: 700, marginBottom: 6 }}>Math</div>
                 <div style={{ color: "rgba(0,0,0,0.7)" }}>{SKILLS.math.join(" • ")}</div>
+              </div>
+              <div>
+                <div style={{ fontWeight: 700, marginBottom: 6 }}>Others</div>
+                <div style={{ color: "rgba(0,0,0,0.7)" }}>{SKILLS.others.join(" • ")}</div>
               </div>
             </div>
           </Section>
