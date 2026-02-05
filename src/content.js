@@ -89,8 +89,9 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = {
-  software: ["Python", "C++", "Java", "React/Vite", "Git", "Probability Theory", "Mandarin", "English", "Data Science", "LaTeX"],
+  software: ["Python", "C++", "Java", "React/Vite", "Git", "Data Science", "LaTeX"],
   math: ["Abstract Algebra", "Probability Theory", "Linear Algebra", "Combinatorics", "Calculus and Mathematical Analysis", "Basic Representation theory", "Algebraic geometry (intro)", "Mathematical Research"],
+  others: ["Mandarin", "English", "Data Science", "Game of Go(High level Amateur"]
 };
 
 export const COURSEWORKS = [
